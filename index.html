@@ -5,12 +5,21 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="styles/style.css"/>
   <title>Red Barbudos</title>
+  <style>
+  ul#menu li{
+    display:inline; }
+  table#tds td{
+    width:60px;
+    height:60px;
+    border:solid 1px silver;
+    text-align:center;  }
+  </style>
 </head>
 <body>
   <h1>
-    Red Barbudos
+    Red Barbudos (заголовок h1)
   </h1>
-  <h6>сайт</h6>
+  <h6>сайт (h6)</h6>
   <div>
     содержимое
     <p>первый параграф</p>
@@ -23,6 +32,7 @@
     
     так
   </pre>
+  <h2 id="label1">еще́ заголовок</h2>
   <p><b>жирный</b> <del>зачеркнутый</del> тут какой-то текст</p>
   <p>и тут текст</p>  
   <p>снова текст</p>
@@ -31,9 +41,91 @@
   <p><sub>под</sub>строка<sup>над</sup> - <u>ю текст</u></p>
   <p><ins>text</ins> <mark>text2</mark></p>
   <div>
-    <img width="70%" src="./images/smith1.jpg" style="float:left; margin-right:10px;"/>
+    <img width="70%" src="./images/smith1.jpg" style="float:left; margin-right:20px;"/>
     это кузнец кузнец кузнец
   </div>
-  
+  <p>параграф</p>
+  <div>
+  <ol>
+    <li>пункт1</li>
+    <li>пункт2</li>
+  </ol>
+    <ul>
+      <li>список</li>
+      <li>список</li>
+    </ul>
+  </div>
+  <ul id="menu">
+    <il>menu1</il>
+    <li>menu2</li>
+    <li>menu3</li>
+  </ul>
+  <div>
+    <details>
+      <summary>заголовок</summary>
+      <ul>
+        <li>hide1</li>
+        <li>hide2</li>
+      </ul>
+    </details>
+    <dl>
+      <dt>html</dt>
+      <dd>язык разметки страниц</dd>
+      <dt>css</dt>
+      <dd>язык украшения страниц</dd>
+    </dl>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <td>num</td> <td>lang</td> <td>desk</td>
+      </tr>
+      <tr>
+        <td>1</td> <td>js</td> <td>интересный язык для web</td>
+      </tr>
+      <tr>
+        <td>foo1</td> <td>foo2</td>
+      </tr>
+    </table>
+    
+    <table border="solid">
+      <caption><b>lang for me</b></caption>
+      <thead>
+        <tr>
+          <th>№</th> <th>lang</th> <th>сфера применения</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td> <td>c#</td> <td>много где</td>
+        </tr>
+        <tr>
+          <td>1</td> <td>js</td> <td>web, настольные приложения</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3" style="background-color:green">программируте, а не прокрастинируйте</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <table id="tds">
+    <tr>
+      <td rowspan="2" bgcolor="yellow">1</td>
+      <td>2</td> <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td> <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td> <td colspan="2" bgcolor="red">7</td>
+    </tr>
+  </table>
+  <div>
+    <br>
+      <a href="https://metanit.com/web/html5/2.9.php">metanit</a>
+  </div>
+  <a href="#label1">ссылка на заголовок</a>
 </body>
 </html>
